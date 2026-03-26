@@ -49,7 +49,7 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -285,21 +285,42 @@ ul {
 
 .nav-toggle {
   display: none;
-  flex-direction: column;
-  gap: 5px;
+  position: fixed; /*  thêm */
+  top: 20px;
+  right: 20px;
+
+  width: 30px; /*  thêm */
+  height: 20px; /*  thêm */
+
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 0;
+  z-index: 999;
 }
 
 .nav-toggle span {
-  display: block;
-  width: 26px;
+  position: absolute; /* QUAN TRỌNG */
+  left: 0;
+
+  width: 100%;
   height: 2px;
+
   background: var(--text-light);
   border-radius: 2px;
-  transition: all var(--transition);
+
+  transition: all 0.3s ease;
+}
+.nav-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.nav-toggle span:nth-child(2) {
+  top: 9px;
+}
+
+.nav-toggle span:nth-child(3) {
+  bottom: 0;
 }
 
 .navbar.scrolled .nav-toggle span {
@@ -892,6 +913,7 @@ ul {
 }
 
 .product-card {
+  display: block;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--bg-card);
@@ -945,6 +967,8 @@ ul {
   letter-spacing: 0.05em;
   text-decoration: none;
   cursor: pointer;
+  /* thêm */
+  pointer-events: none;
 }
 
 .product-card:hover .product-card-overlay {
@@ -1321,6 +1345,7 @@ a.contact-item {
 
   .section {
     padding: 72px 0;
+    scroll-margin-top: 100px;
   }
 
   .container {
@@ -1382,4 +1407,59 @@ a.contact-item {
   .contact-item {
     padding: 18px 20px;
   }
+}
+
+/* ---- thêm ----- */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* mượt trên máy yếu */
+.product-card,
+.exp-card,
+.skill-card {
+  will-change: transform;
+}
+.nav-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999; /* cao hơn tất cả */
+}
+.nav-links {
+  display: none; /* QUAN TRỌNG */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(26, 14, 18, 0.98);
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  z-index: 100;
+}
+.nav-toggle.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.nav-links {
+  z-index: 100;
+}
+.nav-toggle.active span {
+  background: #fff;
 }
