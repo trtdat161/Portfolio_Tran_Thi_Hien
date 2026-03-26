@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tan Thi Hien - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-logo">TTH<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Về Tôi</a></li>
+        <li><a href="#education">Học Vấn</a></li>
+        <li><a href="#experience">Kinh Nghiệm</a></li>
+        <li><a href="#skills">Kỹ Năng</a></li>
+        <li><a href="#products">Sản Phẩm</a></li>
+        <li><a href="#contact" class="nav-cta">Liên Hệ</a></li>
+      </ul>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+      <div class="hero-content">
+        <p class="hero-label reveal">Creative Portfolio</p>
+        <h1 class="hero-name reveal">
+          <span>Trần</span>
+          <span class="hero-name--outline">Thị Hiền</span>
+        </h1>
+        <p class="hero-tagline reveal">
+          Content Creator &amp; Marketing Specialist
+        </p>
+        <div class="hero-meta reveal">
+          <a href="mailto:hientran9394@gmail.com" class="hero-email"
+            >hientran9394@gmail.com</a
+          >
+          <span class="hero-divider">✦</span>
+          <span>TP. Hồ Chí Minh</span>
+        </div>
+        <div class="hero-actions reveal">
+          <a href="#about" class="btn btn--primary">Khám phá</a>
+          <a href="#contact" class="btn btn--ghost">Liên hệ ngay</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap reveal">
+        <div class="hero-photo-frame">
+          <img src="./img/hien2.jpg" alt="Trần Thị Hiền" class="hero-photo" />
+        </div>
+        <div class="hero-deco-star" aria-hidden="true">✦</div>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <span>Cuộn xuống</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path
+            d="M10 3v14M4 13l6 6 6-6"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-photo-col reveal">
+            <div class="about-photo-wrap">
+              <img
+                src="./img/hien3.jpg"
+                alt="Trần Thị Hiền"
+                class="about-photo"
+              />
+              <div class="about-photo-badge">
+                <span class="badge-number">5+</span>
+                <span class="badge-text">Năm kinh nghiệm</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-text-col reveal">
+            <p class="section-label">Về Tôi</p>
+            <h2 class="section-heading">
+              Tôi Là<br />
+              <span class="heading-outline">Ai?</span>
+            </h2>
+            <p class="about-body">
+              Xin chào! Mình là <strong>Trần Hiền</strong>. Mình thích viết lách
+              và từng làm việc trong lĩnh vực sáng tạo nội dung, bao gồm
+              content, hình ảnh và video.
+            </p>
+            <p class="about-body">
+              Trước đây mình cũng từng thử sức với nhiều công việc khác nhau,
+              như Chuyên viên tư vấn giáo dục, Sales và qua đó học được nhiều
+              kinh nghiệm quý giá.
+            </p>
+            <p class="about-body">
+              Mình luôn tò mò, thích khám phá ý tưởng mới và mong muốn phát
+              triển, khám phá bản thân ở các vai trò mới.
+            </p>
+            <div class="about-tags">
+              <span class="tag">Content Creator</span>
+              <span class="tag">SEO</span>
+              <span class="tag">Marketing</span>
+              <span class="tag">Thiết kế</span>
+              <span class="tag">Video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label section-label--light">Hành Trình</p>
+          <h2 class="section-heading section-heading--light">
+            Học <span class="heading-outline heading-outline--light">Vấn</span>
+          </h2>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-card-year">2012 — 2016</div>
+          <div class="edu-card-body">
+            <div class="edu-card-icon" aria-hidden="true">🎓</div>
+            <div>
+              <h3 class="edu-card-title">
+                Đại Học Khoa Học Xã Hội &amp; Nhân Văn TP.HCM
+              </h3>
+              <p class="edu-card-major">Văn Học — Ngôn Ngữ Học</p>
+              <p class="edu-card-desc">
+                Tốt nghiệp chuyên ngành Ngôn ngữ học, luôn yêu thích việc khám
+                phá ngôn từ, viết lách cũng như tìm hiểu cách truyền tải thông
+                điệp một cách sáng tạo.
+              </p>
+              <p class="edu-card-desc">
+                Quá trình học tập giúp phát triển tư duy phân tích, khả năng
+                diễn đạt và sự tỉ mỉ — những kỹ năng mang theo trong công việc
+                sáng tạo nội dung và thiết kế hình ảnh.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="edu-bg-text" aria-hidden="true">EDUCATION</div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Quá Trình</p>
+          <h2 class="section-heading">
+            Kinh <span class="heading-outline">Nghiệm</span>
+          </h2>
+        </div>
+        <div class="exp-grid">
+          <article class="exp-card reveal" data-index="01">
+            <div class="exp-card-num" aria-hidden="true">01</div>
+            <div class="exp-card-content">
+              <h3 class="exp-card-company">Tripplaner</h3>
+              <p class="exp-card-role">Content Writer</p>
+              <p class="exp-card-desc">
+                Phụ trách viết và đăng Content giới thiệu khách sạn lên Website
+                và Fanpage, xây dựng nội dung thu hút và tối ưu SEO.
+              </p>
+              <div class="exp-card-tags">
+                <span>Content</span><span>SEO</span><span>Fanpage</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-card reveal" data-index="02">
+            <div class="exp-card-num" aria-hidden="true">02</div>
+            <div class="exp-card-content">
+              <h3 class="exp-card-company">Trái Cây Bốn Mùa</h3>
+              <p class="exp-card-role">Store Leader</p>
+              <p class="exp-card-desc">
+                Leader điều hành cửa hàng Trà &amp; Nước Ép Bốn Mùa, quản lý vận
+                hành, nhân sự và chất lượng dịch vụ.
+              </p>
+              <div class="exp-card-tags">
+                <span>Quản lý</span><span>Vận hành</span><span>Nhân sự</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-card reveal" data-index="03">
+            <div class="exp-card-num" aria-hidden="true">03</div>
+            <div class="exp-card-content">
+              <h3 class="exp-card-company">Du Lịch Bazan Việt Nam</h3>
+              <p class="exp-card-role">Marketing Leader</p>
+              <p class="exp-card-desc">
+                Dẫn dắt đội ngũ Marketing, triển khai chiến lược nội dung, quảng
+                cáo đa kênh và phát triển thương hiệu du lịch.
+              </p>
+              <div class="exp-card-tags">
+                <span>Marketing</span><span>Ads</span><span>Branding</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label section-label--light">Chuyên Môn</p>
+          <h2 class="section-heading section-heading--light">
+            Kỹ <span class="heading-outline heading-outline--light">Năng</span>
+          </h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">✍️</div>
+            <h3 class="skill-title">Content</h3>
+            <ul class="skill-list">
+              <li>
+                Lên kế hoạch từ khóa theo quý, tháng, tuần qua Google Trends,
+                Keyword Planner, Keyword Tool
+              </li>
+              <li>Tuyển & quản lý CTV viết bài — 150 đến 240 bài/tháng</li>
+              <li>Theo dõi tiến độ, rà soát SEO bài viết</li>
+              <li>Báo cáo traffic bằng Analytics, Console, Ahref</li>
+              <li>Viết kịch bản video, Landing Page, nội dung quảng cáo</li>
+              <li>Training thực tập sinh & cộng tác viên</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">🎪</div>
+            <h3 class="skill-title">Sự Kiện</h3>
+            <ul class="skill-list">
+              <li>
+                Phối hợp lên kế hoạch tổ chức sự kiện cho khách hàng Công ty/Đội
+                nhóm
+              </li>
+              <li>Lên kịch bản chương trình sự kiện chi tiết</li>
+              <li>Thuê dụng cụ, đồ chơi, MC dẫn chương trình</li>
+              <li>Liên hệ nhà hàng, khách sạn phù hợp nhu cầu</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">📣</div>
+            <h3 class="skill-title">Quảng Cáo</h3>
+            <ul class="skill-list">
+              <li>Triển khai quảng cáo online Google, Facebook, Youtube</li>
+              <li>Lên chiến dịch Search, GDN, Video Ads</li>
+              <li>
+                Phân tích insight: độ tuổi, giới tính, vùng miền, sở thích
+              </li>
+              <li>Tối ưu kỹ thuật quảng cáo theo mục tiêu chiến dịch</li>
+              <li>Đo lường kết quả và báo cáo hiệu quả</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">🎨</div>
+            <h3 class="skill-title">Thiết Kế</h3>
+            <ul class="skill-list">
+              <li>Thiết kế banner quảng cáo, promotion, hồ sơ năng lực</li>
+              <li>Làm video bán tour du lịch từ source video công ty</li>
+              <li>Hỗ trợ team chụp hình tour cho khách</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="skills-bg-text" aria-hidden="true">SKILLS</div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Showcase</p>
+          <h2 class="section-heading">
+            Sản <span class="heading-outline">Phẩm</span>
+          </h2>
+        </div>
+        <div class="products-grid">
+          <div class="product-card product-card--large reveal">
+            <div class="product-card-img">
+              <img src="./img/seo-content-2.jpg" alt="Sản phẩm 1" />
+              <div class="product-card-overlay">
+                <span
+                  ><a
+                    href="https://drive.google.com/drive/folders/1rPGzaPKUK-PLXIMGU1rCHpbPx9YqHJ8s"
+                    target="_blank"
+                    >Xem chi tiết →</a
+                  >
+                </span>
+              </div>
+            </div>
+            <div class="product-card-info">
+              <span class="product-type">Content / SEO</span>
+              <h3>Dự án nổi bật #1</h3>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-card-img">
+              <img src="./img/thiet-ke.jpg" alt="Sản phẩm 2" />
+              <div class="product-card-overlay">
+                <span
+                  ><a
+                    href="https://drive.google.com/drive/folders/1jggv-b81QrOlcwU7lx3PkRnarhwXvFvf"
+                    target="_blank"
+                    >Xem chi tiết →</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="product-card-info">
+              <span class="product-type">Thiết kế</span>
+              <h3>Dự án nổi bật #2</h3>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-card-img">
+              <img src="./img/marketing.jpg" alt="Sản phẩm 3" />
+              <div class="product-card-overlay">
+                <span
+                  ><a
+                    href="https://drive.google.com/drive/folders/1h-uM8V_FDaxI5TM0aKvI02MbbMOL7zQw"
+                    target="_blank"
+                    >Xem chi tiết →</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="product-card-info">
+              <span class="product-type">Marketing</span>
+              <h3>Dự án nổi bật #3</h3>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-card-img">
+              <img src="./img/video.jpg" alt="Sản phẩm 4" />
+              <div class="product-card-overlay">
+                <span
+                  ><a
+                    href="https://drive.google.com/drive/folders/19kHm3qFUcomkLIu47k6ydPJFr4ktqbl0"
+                    target="_blank"
+                    >Xem chi tiết →</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="product-card-info">
+              <span class="product-type">Video</span>
+              <h3>Dự án nổi bật #4</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-text">
+            <p class="section-label section-label--light">Kết Nối</p>
+            <h2 class="section-heading section-heading--light">
+              Contact<br />
+              <span class="heading-outline heading-outline--light">Me.</span>
+            </h2>
+            <p class="contact-sub">
+              Hãy kết nối với mình để cùng tạo nên những dự án sáng tạo!
+            </p>
+          </div>
+          <div class="contact-info">
+            <a href="tel:0334824821" class="contact-item">
+              <div class="contact-item-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.13 6.13l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">033 482 4821</span>
+              </div>
+            </a>
+            <a href="mailto:hientran9394@gmail.com" class="contact-item">
+              <div class="contact-item-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">hientran9394@gmail.com</span>
+              </div>
+            </a>
+            <!-- <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">TP. Hồ Chí Minh</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="contact-bg-text" aria-hidden="true">CONTACT</div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-logo">TTH<span>.</span></span>
+          <p class="footer-copy">
+            © <span class="year"></span> Trần Thị Hiền. All rights reserved.
+          </p>
+          <div class="footer-stars" aria-hidden="true">✦ ✦ ✦ ✦</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
